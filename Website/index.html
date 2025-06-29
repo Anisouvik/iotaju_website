@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOTA - Internet of Things Association</title>
+    <link rel="stylesheet" href="styles.css?v=2.3">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="iota-logo.png" alt="IOTA Logo" class="nav-logo-img">
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="team.html" class="nav-link">Team</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <video autoplay muted loop id="bg-video">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-technology-particle-background-34408-large.mp4" type="video/mp4">
+        </video>
+        <img src="iota-logo.png" alt="IOTA Logo Background" class="hero-logo-overlay">
+        <div class="hero-content" style="margin-top: 32vw;">
+            <p class="hero-tagline">We are a group that love to discover greater possibilities with Internet of Things</p>
+            <button class="cta-button">Explore</button>
+        </div>
+    </section>
+
+    <!-- Recent Events Section -->
+    <section id="recent-events" class="recent-events section-animate">
+        <div class="container">
+            <h2 class="section-title">Recent Events</h2>
+            <div class="events-grid">
+                <div class="event-card" data-direction="left">
+                    <div class="event-image">
+                        <img src="images/events/event4.jpg" alt="INNOVATIA">
+                    </div>
+                    <div class="event-content">
+                        <h3>INNOVATIA</h3>
+                        <p>Join us for a Journey through innovation, creativity and technology. Dive into competitons, exhibitions and more!!</p>
+                        <span class="event-date">3rd July 2025</span>
+                        <div class="event-buttons">
+                            <button class="event-btn" onclick="openEventModal('innovatia')">About this Event</button>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6vH8mBZux1-B0AGpB6pecnSZ_MCU_K6ak4XLL59uBsxKnOg/viewform" target="_blank" class="apply-btn">Apply</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card" data-direction="left">
+                    <div class="event-image">
+                        <img src="images/events/event5.jpg" alt="LORD OF THE RINGS">
+                    </div>
+                    <div class="event-content">
+                        <h3>LORD OF THE RINGS</h3>
+                        <p>A thrilling event journeying through the challenges of IoT systems. Collaborate, compete, and conquer!!</p>
+                        <span class="event-date">23 March 2025</span>
+                        <button class="event-btn" onclick="openEventModal('lord-of-the-rings')">About this Event</button>
+                    </div>
+                </div>
+                <div class="event-card" data-direction="left">
+                    <div class="event-image">
+                        <img src="images/events/event6.jpg" alt="CONNEXION">
+                    </div>
+                    <div class="event-content">
+                        <h3>CONNEXION</h3>
+                        <p>The IoT Applications Club launched its first-ever IoT Hackathon, "Connexion", inviting enthusiastic freshmen to explore the vast world of Internet of Things through innovation and teamwork.</p>
+                        <span class="event-date">To be declared soon</span>
+                        <button class="event-btn" onclick="openEventModal('connexion')">About this Event</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section-animate">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-slider">
+                <div class="slider-container">
+                    <div class="slider-track">
+                        <div class="slider-item">
+                            <img src="images/gallery/gallery1.jpg" alt="Workshop Session">
+                            <div class="image-overlay">
+                                <h3>Workshop Session</h3>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <img src="images/gallery/gallery2.jpg" alt="Hackathon">
+                            <div class="image-overlay">
+                                <h3>IoT Hackathon</h3>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <img src="images/gallery/gallery3.jpg" alt="Technical Seminar">
+                            <div class="image-overlay">
+                                <h3>Technical Seminar</h3>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <img src="images/gallery/gallery4.jpg" alt="Team Meeting">
+                            <div class="image-overlay">
+                                <h3>Team Meeting</h3>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <img src="images/gallery/gallery5.jpg" alt="Project Demo">
+                            <div class="image-overlay">
+                                <h3>Project Demo</h3>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <img src="images/gallery/gallery6.jpg" alt="Award Ceremony">
+                            <div class="image-overlay">
+                                <h3>Award Ceremony</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn prev-btn" onclick="slideGallery('prev')">
+                    <span>←</span>
+                </button>
+                <button class="slider-btn next-btn" onclick="slideGallery('next')">
+                    <span>→</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="images/projects/project1.jpg" alt="4-Wheeler Automation">
+                    <div class="project-content">
+                        <h3>4-Wheeler Automation</h3>
+                        <p class="project-description">An innovative autonomous vehicle project focusing on navigation, obstacle detection, and smart control systems.</p>
+                        <button class="project-btn" onclick="openProjectModal('4-Wheeler Automation', 'Project Overview<br><br>Our 4-Wheeler Automation project represents a significant leap forward in autonomous vehicle technology. This innovative system combines advanced sensors, machine learning algorithms, and real-time data processing to create a safe and efficient self-driving experience.<br><br><strong>Key Features</strong><br>• Advanced obstacle detection and avoidance system<br>• Precise navigation using LIDAR and computer vision<br>• Real-time traffic analysis and route optimization<br>• Emergency braking and collision prevention<br>• Intelligent speed adaptation<br><br><strong>Technical Specs</strong><br>• Processing: NVIDIA Jetson AGX Xavier<br>• Sensors: 360° LIDAR, Stereo Cameras<br>• Connectivity: 5G, V2X Communication<br>• Software: ROS 2, TensorFlow, OpenCV<br>• Range: 500 km per charge<br>• Autonomy: Level 4 Autonomous<br><br><strong>Project Impact</strong><br>This project aims to revolutionize urban mobility by providing a safer, more efficient, and environmentally friendly transportation solution. Our autonomous vehicle technology has the potential to reduce traffic accidents by up to 90%, decrease carbon emissions by 40%, and improve overall transportation accessibility for all.')">About this Project</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/projects/project2.jpg" alt="2-Wheeler Automation">
+                    <div class="project-content">
+                        <h3>2-Wheeler Automation</h3>
+                        <p class="project-description">An innovative autonomous vehicle project focusing on navigation, obstacle detection, and smart control systems.</p>
+                        <button class="project-btn" onclick="openProjectModal('2-Wheeler Automation', 'Project Overview<br><br>The 2-Wheeler Automation project focuses on developing self-balancing autonomous two-wheelers designed for last-mile connectivity in urban environments. This project addresses the growing need for efficient and eco-friendly personal transportation solutions.<br><br><strong>Key Features</strong><br>• Advanced self-balancing technology<br>• Collision avoidance system<br>• Smart route planning and navigation<br>• Compact and lightweight design<br>• Battery-efficient operation<br>• Smartphone app integration<br><br><strong>Technical Specs</strong><br>• Processor: Raspberry Pi 4 with custom hat<br>• Sensors: IMU, Ultrasonic, HD Camera<br>• Battery: 48V 20Ah Lithium-ion<br>• Range: Up to 80 km per charge<br>• Top Speed: 45 km/h<br>• Connectivity: 4G, Bluetooth 5.0<br><br><strong>Project Impact</strong><br>This project aims to revolutionize urban mobility by providing an affordable, efficient, and environmentally friendly transportation alternative. Our autonomous two-wheeler technology has the potential to reduce traffic congestion by up to 30% and decrease carbon emissions by 50% in urban areas.')">About this Project</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/projects/project3.jpg" alt="Drone Automation">
+                    <div class="project-content">
+                        <h3>Drone Automation</h3>
+                        <p class="project-description">An innovative autonomous vehicle project focusing on navigation, obstacle detection, and smart control systems. It is a drone that can navigate through the air and avoid obstacles. This drone is equipped with a camera and a lidar sensor to detect obstacles and navigate through the air.</p>
+                        <button class="project-btn" onclick="openProjectModal('Drone Automation', 'Project Overview<br><br>Our Drone Automation project focuses on developing intelligent, autonomous drones capable of performing complex tasks with minimal human intervention. These drones are designed for applications ranging from aerial photography to search and rescue operations.<br><br><strong>Key Features</strong><br>• Autonomous flight and navigation<br>• Object recognition and tracking<br>• Precision landing and takeoff<br>• Long-range communication<br>• Real-time 4K video streaming<br>• AI-powered obstacle avoidance<br><br><strong>Technical Specs</strong><br>• Flight Time: Up to 60 minutes<br>• Range: Up to 15 km<br>• Camera: 4K with 3-axis gimbal<br>• GPS: Dual GPS + GLONASS<br>• Max Speed: 72 km/h<br>• Wind Resistance: Up to 12 m/s<br><br><strong>Applications</strong><br><strong>Aerial Photography</strong><br>Stunning 4K footage with professional-grade stabilization<br><br><strong>Search & Rescue</strong><br>Thermal imaging and AI for locating missing persons<br><br><strong>Agriculture</strong><br>Crop monitoring and precision agriculture solutions')">About this Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-animate" style="padding-top: 200px !important; padding-bottom: 80px !important; margin-top: 100px !important;">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>IOTA (Internet of Things Association) is a student-driven technical club dedicated to exploring the vast potential of IoT technology. We bring together passionate students who are eager to learn, innovate, and create solutions that connect the physical and digital worlds.</p>
+                    <p>Our mission is to foster a community of IoT enthusiasts, provide hands-on learning experiences, and develop cutting-edge projects that showcase the power of connected devices.</p>
+                </div>
+                <div class="about-icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-animate">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 IOTA. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js?v=2.2"></script>
+    <script>
+        // Scroll-based navbar styling - Clean implementation
+        function handleNavbarScroll() {
+            const navbar = document.querySelector('.navbar');
+            if (!navbar) {
+                return;
+            }
+            
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Remove all classes first
+            navbar.classList.remove('scrolled', 'transparent');
+            
+            if (scrollTop > 100) {
+                navbar.classList.add('scrolled');
+            } else if (scrollTop > 50) {
+                navbar.classList.add('transparent');
+            }
+        }
+        
+        // Add scroll event listener
+        window.addEventListener('scroll', handleNavbarScroll);
+        
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            handleNavbarScroll();
+        });
+        
+        // Also run immediately
+        handleNavbarScroll();
+    </script>
+</body>
+</html> 

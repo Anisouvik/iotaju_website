@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - IOTA</title>
+    <link rel="stylesheet" href="styles.css?v=2.3">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="events-page">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="iota-logo.png" alt="IOTA Logo" class="nav-logo-img">
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="events.html" class="nav-link active">Events</a>
+                <a href="team.html" class="nav-link">Team</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Events Section -->
+    <section class="events" style="padding-top: 120px;">
+        <div class="container">
+            <h2 class="section-title">Events</h2>
+            <div class="events-grid">
+                <div class="event-card" data-direction="left">
+                    <div class="event-image">
+                        <img src="images/events/event4.jpg" alt="INNOVATIA">
+                    </div>
+                    <div class="event-content">
+                        <h3>INNOVATIA</h3>
+                        <p>Join us for a Journey through innovation, creativity and technology. Dive into competitons, exhibitions and more!!</p>
+                        <span class="event-date">3rd July 2025</span>
+                        <div class="event-buttons">
+                            <button class="event-btn" onclick="openEventModal('innovatia')">About this Event</button>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6vH8mBZux1-B0AGpB6pecnSZ_MCU_K6ak4XLL59uBsxKnOg/viewform" target="_blank" class="apply-btn">Apply</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card" data-direction="left">
+                    <div class="event-image">
+                        <img src="images/events/event5.jpg" alt="LORD OF THE RINGS">
+                    </div>
+                    <div class="event-content">
+                        <h3>LORD OF THE RINGS</h3>
+                        <p>A thrilling event journeying through the challenges of IoT systems. Collaborate, compete, and conquer!!</p>
+                        <span class="event-date">23 March 2025</span>
+                        <button class="event-btn" onclick="openEventModal('lord-of-the-rings')">About this Event</button>
+                    </div>
+                </div>
+
+                <div class="event-card" data-direction="left">
+                    <div class="event-image">
+                        <img src="images/events/event6.jpg" alt="CONNEXION">
+                    </div>
+                    <div class="event-content">
+                        <h3>CONNEXION</h3>
+                        <p>The IoT Applications Club launched its first-ever IoT Hackathon, "Connexion", inviting enthusiastic freshmen to explore the vast world of Internet of Things through innovation and teamwork.</p>
+                        <span class="event-date">To be declared soon</span>
+                        <button class="event-btn" onclick="openEventModal('connexion')">About this Event</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 IOTA. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Event Modal -->
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js?v=2.2"></script>
+</body>
+</html> 
